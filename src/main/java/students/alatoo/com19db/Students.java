@@ -6,7 +6,7 @@ import javax.persistence.GenerationType;
 import javax.persistence.Id;
 
 @Entity
-public class Users {
+public class Students {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer id;
@@ -15,9 +15,9 @@ public class Users {
     private String phoneNumber;
     private String address;
 
-    public Users() {}
+    public Students() {}
 
-    public Users(Integer id, String name, String email, String phoneNumber, String address) {
+    public Students(Integer id, String name, String email, String phoneNumber, String address) {
         this.id = id;
         this.name = name;
         this.email = email;
@@ -72,7 +72,7 @@ public class Users {
 
     @Override
     public boolean equals(Object obj) {
-        if (((Users) obj).getName().equals(name))
+        if (((Students) obj).getName().equals(name))
             return true;
         else
             return false;
