@@ -12,13 +12,17 @@ public class Users {
     private Integer id;
     private String name;
     private String email;
+    private String phoneNumber;
+    private String address;
 
     public Users() {}
 
-    public Users(Integer id, String name, String email) {
+    public Users(Integer id, String name, String email, String phoneNumber, String address) {
         this.id = id;
         this.name = name;
         this.email = email;
+        this.phoneNumber = phoneNumber;
+        this.address = address;
     }
 
     public Integer getId() {
@@ -45,9 +49,25 @@ public class Users {
         this.email = email;
     }
 
+    public String getphoneNumber() {
+        return phoneNumber;
+    }
+
+    public void setphoneNumber(String phoneNumber) {
+        this.phoneNumber = phoneNumber;
+    }
+
+    public String getaddress() {
+        return address;
+    }
+
+    public void setaddress(String address) {
+        this.address = address;
+    }
+
     @Override
     public int hashCode() {
-        return name.hashCode() + email.hashCode();
+        return name.hashCode() + email.hashCode() + phoneNumber.hashCode() +address.hashCode();
     }
 
     @Override
@@ -60,7 +80,7 @@ public class Users {
 
     @Override
     public String toString() {
-        return name + ":" + email;
+        return name + ":" + email + ";" + phoneNumber +  ";" + address;
     }
 
 

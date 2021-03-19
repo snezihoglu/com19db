@@ -12,7 +12,7 @@ public class UsersController {
 
     @PostMapping("/add")
     public @ResponseBody String addNewUser(@RequestBody Users user) {
-        usersRepository.save(user); // insert into users values (name, email);
+        usersRepository.save(user);
         return "OK";
     }
 
@@ -20,4 +20,24 @@ public class UsersController {
     public @ResponseBody Iterable<Users> getAllUsers() {
         return usersRepository.findAll();
     }
+
+    @GetMapping("/{id}")
+    public @ResponseBody Users one(@PathVariable Integer id) {
+        return usersRepository.findById(id).orElseThrow(() -> new UserNotFoundException(id));
+    }
+
+    @PutMapping("/{id}")
+    public @ResponseBody Users put(@RequestBody Users replaceUsers, @PathVariable Integer id) {
+        return usersRepository.findById(id).map(users -> {
+            users = replaceUsers;
+            users.setId(id);
+            return usersRepository.save(users);
+        }).orElseThrow(() -> new UserNotFoundException(id));
+    }
+
+    @DeleteMapping("/{id}")
+    void del(@PathVariable Integer id) {
+        usersRepository.deleteById(id);
+    }
+
 }
