@@ -10,14 +10,22 @@ import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-
+@Controller
 @SpringBootApplication
 public class Com19dbApplication {
+
+    @Autowired
+    private StudentsRepository repo;
 
     public static void main(String[] args) {
         SpringApplication.run(Com19dbApplication.class, args);
     }
 
+    @GetMapping("/")
+    public String index(Model model){
+        model.addAttribute("Students", repo.findAll());
+        return "index";
+    }
 
 
 }
