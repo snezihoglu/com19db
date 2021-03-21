@@ -1,41 +1,31 @@
-<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-</button>
-<div class="collapse navbar-collapse" id="navbarNav">
-    <ul class="navbar-nav">
-        <li class="nav-item active">
-            <a class="nav-link" href="/"> Back To Main page <span class="sr-only">(current)</span></a>
-        </li>
-        <li class="nav-item">
-            <a class="nav-link" href="/aboutapi">AboutAPI</a>
-        </li>
-    </ul>
-</div>
-</nav>
-<div class="container">
-    <h2 style = "font-family:Georgia,ser;font-size:45px;font-style:oblique; text-align: center;">How has API been used </h2>
-    <br>
-</div>
-<div class="container" style="font-family: Verdana,SansSerif; font-size: 14px;font-style: normal" >
-    About the API there are 4 methods and they are as follows:</div>
-<div class="container" style="font-family: Verdana,SansSerif; font-size: 14px;font-style: normal" >
-    GET
-    <br> POST
-    <br>PUT
-    <br>DELETE
-</div>
-<div class="container" style="font-family: Verdana,SansSerif; font-size: 14px;font-style: normal" >
-    So, here I will be describing shortly how I used API (Screenshots can be found in github read.me section).
-    <br>
-
-    <br>GET- This method can be used by typing "/datalar/id" and the information of the writing ip can be appeared.
-    <br>POST- This method is used by typing"/datalar/add" and the required information will be added to the server.
-    <br>PUT- This method is used by typing"/datalar/id" the typed id's iformation can be changed.
-    <br>DELETE- This method is activated by typing"/datalar/id" and selected id will be removed from the server.
-    <br>
-    <br>
-    So, this was the short description about the API I used in this web application.
-    For more information please read the read.me section in github.
-</div>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.bundle.min.js"></script>
+    <title>API</title>
+</head>
+<body>
+<h1 style=" text-align: center; margin-top: 25px;">
+    A short description
+    <small class="text-muted">of REST API</small>
+</h1>
+<p style="padding: 10px;"><pre style="font-family: Arial; font-size: 18px;">
+        REST API is basically an application programming interface that conforms to the constraints of REST architectural style and allows for interaction with
+    RESTful web services.
+        if you want to interact with a computer or system to retrieve information or perform a function, an API helps you communicate what you want to that
+    system so it can understand and fulfill the request.
+        Web APIs typically use HTTP for request messages and provide a definition of the structure of response messages. These response messages usually take
+    the form of an XML or JSON file. Both XML and JSON are preferred formats because they present data in a way that’s easy for other apps to manipulate.
+        Here we have 4 routes for each operation:
+            GET
+            POST
+            PUT
+            DELETE
+        For these operations @GetMapping, @PostMapping, @PutMapping and @DeleteMapping mappings are written correspondingly.
+</pre></p>
 </body>
 </html>
