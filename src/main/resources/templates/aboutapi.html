@@ -9,6 +9,26 @@
     <title>API</title>
 </head>
 <body>
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <img src ="https://upload.wikimedia.org/wikipedia/en/0/07/Ala-Too_International_University_Seal.png" style="width:100px;height:100px;">
+    <a class="navbar-brand fas fa-mug-hot fa-lg" href="#">COM19 Students</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav navbar-nav ml-auto mt-2 mt-lg-0">
+            <li class="nav-item active">
+                <a class="nav-link" href="/"> Home page <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Github</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Information about API</a>
+            </li>
+        </ul>
+    </div>
+</nav>
 <h1 style=" text-align: center; margin-top: 25px;">
     A short description
     <small class="text-muted">of REST API</small>
@@ -18,14 +38,18 @@
     RESTful web services.
         if you want to interact with a computer or system to retrieve information or perform a function, an API helps you communicate what you want to that
     system so it can understand and fulfill the request.
-        Web APIs typically use HTTP for request messages and provide a definition of the structure of response messages. These response messages usually take
-    the form of an XML or JSON file. Both XML and JSON are preferred formats because they present data in a way that’s easy for other apps to manipulate.
+</pre></p>
+<h1 style=" text-align: center; margin-top: 25px;">
+    How to use
+    <small class="text-muted">REST API</small>
+</h1>
+<p style="padding: 10px;"><pre style="font-family: Arial; font-size: 18px;">
         Here we have 4 routes for each operation:
-            GET
-            POST
-            PUT
-            DELETE
-        For these operations @GetMapping, @PostMapping, @PutMapping and @DeleteMapping mappings are written correspondingly.
+            GET - it is used to see all of the information in a table, or a specific row by typing in the id. This method can be used by typing "/students/id"
+            to see a specific row or "/students/all" to see all the data.
+            POST - it is used to insert information to database. This method can be used by typing"/students/add".
+            PUT - it is used to replace a data. This method is used by typing"/studentsr/id".
+            DELETE - it is used to delete a specific row by typing in the id. This method is activated by typing"/students/id".
 </pre></p>
 </body>
 </html>
