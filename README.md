@@ -14,6 +14,8 @@ It is a web application that includes a Student database inside. The purpose of 
 Here is how the web application looks like:
 <br> Main page:
 ![Main page](https://user-images.githubusercontent.com/64955154/111915540-0dc03480-8aa1-11eb-9749-821af2ab8fc6.PNG)
+<br>Add Yourself window 
+![API](https://user-images.githubusercontent.com/64955154/111915634-71e2f880-8aa1-11eb-89df-a491a6d0d00a.PNG)
 
 <br>
 
