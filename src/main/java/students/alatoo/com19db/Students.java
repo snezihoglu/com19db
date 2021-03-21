@@ -80,7 +80,7 @@ public class Students {
 
     @Override
     public String toString() {
-        return name + ":" + email + ";" + phoneNumber +  ";" + address;
+        return name + ":" + email + ":" + phoneNumber +  ":" + address;
     }
 
 

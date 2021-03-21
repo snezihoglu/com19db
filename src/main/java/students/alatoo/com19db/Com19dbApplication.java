@@ -26,6 +26,11 @@ public class Com19dbApplication {
         model.addAttribute("Students", repo.findAll());
         return "index";
     }
+    @GetMapping("/aboutapi")
+    public String aboutapi(){
+        return "aboutapi";
+    }
+
 
 
 }
