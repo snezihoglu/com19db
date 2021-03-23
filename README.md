@@ -7,6 +7,11 @@ Faculty: CS
 <br>Phone Number: 0707725414
 <br>Email: selma.nezihoglu@iaau.edu.kg
 
+
+### ***The link of my web application***
+
+> [COM19 Students](https://com19db.herokuapp.com/) 
+
 ## Project Description
 
 It is a web application that includes a Student database inside. The purpose of the project is to help students and teachers by providing contact information for their classmates and students. The project is done by html and java languages. For the database, postgreSQL is used. The application contains REST API, the further information about it is given below.
@@ -23,7 +28,3 @@ Information window for API
 ![AboutPage](https://user-images.githubusercontent.com/64955154/111917003-e02ab980-8aa7-11eb-870f-2b7725b63fb5.PNG)
 
 
-
-### ***The link of my web application***
-
-> [COM19 Students](https://com19db.herokuapp.com/) 
