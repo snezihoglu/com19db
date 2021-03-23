@@ -12,11 +12,15 @@ Faculty: CS
 It is a web application that includes a Student database inside. The purpose of the project is to help students and teachers by providing contact information for their classmates and students. The project is done by html and java languages.
 <br><br>
 Here is how the web application looks like:
-<br> Main page:
+<br><br>
+Main page:
 ![Main page](https://user-images.githubusercontent.com/64955154/111915540-0dc03480-8aa1-11eb-9749-821af2ab8fc6.PNG)
-<br>"Add Yourself" window 
+For the database, postgreSQL is used.
+<br><br>
+"Add Yourself" window 
 ![API](https://user-images.githubusercontent.com/64955154/111915634-71e2f880-8aa1-11eb-89df-a491a6d0d00a.PNG)
-<br>Information window for API
+<br><br>
+Information window for API
 ![AboutPage](https://user-images.githubusercontent.com/64955154/111917003-e02ab980-8aa7-11eb-870f-2b7725b63fb5.PNG)
 
 
