@@ -63,10 +63,11 @@ Here is the code for API:
     }
 ```
 
-<pre>Here we have 4 routes for each operation:
-       GET - it is used to see all of the information in a table, or a specific row by typing in the id. This method can be used by typing "/students/id"
-       to see a specific row or "/students/all" to see all the data.
-       POST - it is used to insert information to database. This method can be used by typing"/students/add".
-       PUT - it is used to replace a data. This method is used by typing"/studentsr/id".
-       DELETE - it is used to delete a specific row by typing in the id. This method is activated by typing"/students/id".
-</pre>
+Here we have 4 routes for each operation:
+
+      * GET - it is used to see all of the information in a table, or a specific row by typing in the id. This method can be used by typing "/students/id" to see a specific row or "/students/all" to see all the data.
+      * POST - it is used to insert information to database. This method can be used by typing"/students/add".
+      * PUT - it is used to replace a data. This method is used by typing"/studentsr/id".
+      * DELETE - it is used to delete a specific row by typing in the id. This method is activated by typing"/students/id".
+
+
